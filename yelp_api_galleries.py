@@ -4,7 +4,7 @@ import pprint
 import json
 #import yelp_api_key as keys;
 
-#See the official Yelp API for more details: 
+#See the official Yelp API for more details:
 #http://www.yelp.com/developers/documentation
 
 NUM_REQUESTS = 10
@@ -31,9 +31,9 @@ def get_results(params):
         # access_token = token,
         # access_token_secret = token_secret,
     )
-    
 
-    request = session.get("http://api.yelp.com/v2/search", params=params)
+
+    request = session.get("https://api.yelp.com/v2/search", params=params)
     data = request.json()
     session.close()
     return data
@@ -49,5 +49,3 @@ def main(latitude, longitude):
             api_calls_galleries.append(get_results(params))
     print api_calls_galleries
     return api_calls_galleries
-
-
