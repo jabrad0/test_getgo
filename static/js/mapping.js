@@ -130,11 +130,11 @@ var myLatlng = new google.maps.LatLng(37.8044, -122.2708);
           exterior.text(attributes.exterior);
           var directions = $('<button class="info-window-direction-button" />');
           directions.text('Directions');
-          content.append(header);
-          content.append(address);
-          content.append(media_detail);
-          content.append(exterior);
-          content.append(directions);
+          content.append(header, address, media_detail, exterior, directions);
+          // content.append(address);
+          // content.append(media_detail);
+          // content.append(exterior);
+          // content.append(directions);
           infowindow.setContent(content.html());
           //same onclick above also opens the infoWindow after it is populated
           infowindow.open(map, marker_public_art);
