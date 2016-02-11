@@ -115,7 +115,7 @@ var myLatlng = new google.maps.LatLng(37.8044, -122.2708);
           animation: google.maps.Animation.DROP,
           position: new google.maps.LatLng(attributes.latitude,
             attributes.longitude),
-          icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+          icon: 'https://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
         });
       //Add event listener to marker, onclick populate with information
         google.maps.event.addListener(marker_public_art, 'click', function() {
