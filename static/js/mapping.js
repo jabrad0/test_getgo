@@ -53,13 +53,13 @@ var myLatlng = new google.maps.LatLng(37.8044, -122.2708);
         var attributes = data[title];
         console.log(attributes.categories[0])
         if (attributes.categories[0][0] === "Art Galleries") {
-          var icon = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
+          var icon = 'https://maps.google.com/mapfiles/ms/icons/green-dot.png';
         }
         else if (attributes.categories[0][0] === "Wineries") {
-          var icon = 'http://maps.google.com/mapfiles/ms/icons/purple-dot.png';
+          var icon = 'https://maps.google.com/mapfiles/ms/icons/purple-dot.png';
         }
         else {
-          var icon = 'http://maps.google.com/mapfiles/ms/icons/grey-dot.png';
+          var icon = 'https://maps.google.com/mapfiles/ms/icons/grey-dot.png';
         }
         var marker_businesses = new google.maps.Marker({
           map: map,
