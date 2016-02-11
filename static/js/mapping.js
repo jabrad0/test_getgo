@@ -51,7 +51,7 @@ var myLatlng = new google.maps.LatLng(37.8044, -122.2708);
       Object.keys(data)
       .forEach(function(title) {
         var attributes = data[title];
-        console.log(attributes.categories[0])
+        // console.log(attributes.categories[0])
         if (attributes.categories[0][0] === "Art Galleries") {
           var icon = 'https://maps.google.com/mapfiles/ms/icons/green-dot.png';
         }
